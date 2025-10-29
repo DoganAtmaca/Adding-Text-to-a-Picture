@@ -41,7 +41,7 @@ if st.button("🖼️ Görseli Oluştur"):
         txt_layer = Image.new("RGBA", image.size, (255,255,255,0))
         draw = ImageDraw.Draw(txt_layer)
 
-        font = ImageFont.truetype("arial.ttf", 40)  # Sabit font boyutu
+        font = ImageFont.truetype("AovelSansRounded-rdDL.ttf", 40)  # Sabit font boyutu
         max_width = image.width - 100
 
         wrapped_text = wrap_text_by_width(draw, input_text, font, max_width)
@@ -75,3 +75,4 @@ if st.button("🖼️ Görseli Oluştur"):
         )
 else:
     st.info("👆 Bir resim yükle, metni yaz ve ardından '🖼️ Görseli Oluştur' butonuna bas.")
+
